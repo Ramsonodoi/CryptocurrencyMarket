@@ -69,3 +69,17 @@ p {
     justify-content: flex-end;
     color: rgb(23, 25, 36);
 }
+
+.input-class {
+    padding: 10px 0px;
+    background: transparent;
+    caret-color: rgb(56, 97, 251);
+    border: none;
+    font-size: 18px;
+    text-align: right;
+    appearance: none;
+    color: rgb(23, 25, 36);
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    width: 200px;
+}
