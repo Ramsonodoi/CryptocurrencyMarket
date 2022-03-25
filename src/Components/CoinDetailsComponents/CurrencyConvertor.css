@@ -87,3 +87,14 @@ p {
     border: none;
     outline: none;
 }
+.to-container {
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: row;
+    padding: 20px 24px;
+    background-color: rgb(248, 250, 253);
+    -webkit-box-align: center;
+    align-items: center;
+}
