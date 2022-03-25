@@ -68,3 +68,18 @@ const deletePortfolio = async (id) => {
     const newPortfolios = portfolios.filter((portfolio) => { return portfolio._id !== id })
     setPortfolios(newPortfolios)
   }
+  
+  // Edit a Portfolio
+  const editPortfolio = async (id, coinid, amount) => {
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/updateportfolio/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid, amount})
+    });
+    // eslint-disable-next-line
+    const json = await response.json(); 
+
