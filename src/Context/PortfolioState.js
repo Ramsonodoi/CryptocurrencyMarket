@@ -8,4 +8,18 @@ const PortfolioState = (props) => {
   const portfoliosInitial = []
   const [portfolios, setPortfolios] = useState(portfoliosInitial)
 
-}
+
+  // Get all Portfolios
+  const getPortfolios = async () => {
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/fetchallportfolios`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      }
+    });
+    const json = await response.json() 
+    setPortfolios(json)
+  }
+
