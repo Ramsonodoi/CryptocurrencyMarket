@@ -31,9 +31,23 @@ const NameSection = ({ detail }) => {
                                 {" "}
                                 {(turnyellow === "true") ?  <i className="fa fa-star yellow-color " style={{color:"blue"}} ></i>   : <i className="fa fa-star"></i>}
                                     </span>
-                                    </button>
+                         </button>
                     </span>
+                    </div>
+                <div display="flex fw" className="rank-container">
+                    <div className="namePill namePillPrimary">Rank #{detail.market_cap_rank}</div>
+                    <div className="namePill" >Coin</div>
+                </div>
+            </div>
             )
         }
             
 }
+
+return (
+    <> { renderthiscomponent()}
+        </>
+)
+}
+
+export default NameSection
