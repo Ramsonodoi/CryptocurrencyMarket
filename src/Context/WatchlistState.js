@@ -40,3 +40,18 @@ const WatchlistState = (props) => {
       console.log(watchlist)
     setWatchlists(watchlists.concat(watchlist))
   }
+   // Delete a Watchlist
+   const deleteWatchlist = async (id) => {
+    // API Call
+    const response = await fetch(`${host}/api/watchlist/deletewatchlist/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      }
+    });
+         // eslint-disable-next-line
+    const json = response.json(); 
+    const newWatchlists = watchlists.filter((watchlist) => { return watchlist._id !== id })
+    setWatchlists(newWatchlists)
+  }
