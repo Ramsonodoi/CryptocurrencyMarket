@@ -18,3 +18,12 @@
         margin-top: 32px;
     }
 }
+@media (min-width: 768px){
+    .nameHeader {
+        -webkit-box-pack: start;
+        justify-content: flex-start;
+    }
+    .nameHeader {
+        margin-top: 32px;
+    }
+}
