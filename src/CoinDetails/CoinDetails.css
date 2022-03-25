@@ -34,3 +34,15 @@
     box-sizing: border-box;
     margin: 0px;
 }
+
+.link-container-2{
+   display: flex;
+}
+
+/* media queries */
+
+@media only screen and (max-device-width: 480px) {
+    .link-container-1{
+        margin-bottom: 10px;
+    }
+}
