@@ -50,3 +50,10 @@ p {
 .convertor-inner-inner-container .converter-item-name {
     white-space: nowrap;
 }
+.name-convertor {
+    line-height: 1.5;
+    margin: 0px;
+    color: rgb(23, 25, 36);
+    font-size: 14px;
+    font-weight: 500;
+}
