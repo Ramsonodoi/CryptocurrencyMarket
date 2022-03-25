@@ -83,3 +83,16 @@ const deletePortfolio = async (id) => {
     // eslint-disable-next-line
     const json = await response.json(); 
 
+    let newPortfolios = JSON.parse(JSON.stringify(portfolios))
+    // Logic to edit in client
+    for (let index = 0; index < newPortfolios.length; index++) {
+      const element = newPortfolios[index];
+      if (element._id === id) {
+        newPortfolios[index].coinid = coinid;
+        newPortfolios[index].amount = amount;
+        break; 
+      }
+    }  
+    setPortfolios(newPortfolios);
+  }
+ 
