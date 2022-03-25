@@ -38,6 +38,10 @@
     color: rgb(23, 25, 36);
 }
 
+.chart-options button{
+    width: 4x;
+}
+
 .smallcontainer {
     box-sizing: border-box;
     margin: 0px;
