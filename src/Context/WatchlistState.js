@@ -55,3 +55,30 @@ const WatchlistState = (props) => {
     const newWatchlists = watchlists.filter((watchlist) => { return watchlist._id !== id })
     setWatchlists(newWatchlists)
   }
+
+   // Edit a Watchlist
+   const editWatchlist = async (id, coinid) => {
+    // API Call 
+    const response = await fetch(`${host}/api/watchlist/updatewatchlist/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid})
+    });
+         // eslint-disable-next-line
+    const json = await response.json(); 
+
+     let newWatchlists = JSON.parse(JSON.stringify(watchlists))
+    // Logic to edit in client
+    for (let index = 0; index < newWatchlists.length; index++) {
+      const element = newWatchlists[index];
+      if (element._id === id) {
+        newWatchlists[index].coinid = coinid;
+
+        break; 
+      }
+    }  
+    setWatchlists(newWatchlists);
+  }
