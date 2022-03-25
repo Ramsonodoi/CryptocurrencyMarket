@@ -44,7 +44,7 @@ const CoinDetails = ({currentcurrency}) => {
         }
       };
         //FetchData From Api
-        
+
       useEffect(() => {
         const fetchData = async () => {
           setIsLoading(true);
@@ -74,3 +74,18 @@ const CoinDetails = ({currentcurrency}) => {
               },
             })
           ]);
+
+          //CoinData
+
+          setCoinData({
+            day: formatData(day.data.prices),
+            week: formatData(week.data.prices),
+            year: formatData(year.data.prices),
+            detail: detail.data[0],
+          });
+          setIsLoading(false);
+        };
+
+        fetchData();
+
+    }, [currentcurrency]);
