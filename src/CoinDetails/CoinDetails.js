@@ -98,3 +98,8 @@ const CoinDetails = ({currentcurrency}) => {
       if (isLoading) {
         return <Spinner/>;
       }
+      return (
+        <>
+  
+        <div className="grid full-width-layout">
+          <div className="smallcontainer container"> 
