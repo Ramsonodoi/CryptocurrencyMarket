@@ -17,3 +17,8 @@ const WatchlistState = (props) => {
           "auth-token": localStorage.getItem('token')
         }
       });
+
+      const json = await response.json() 
+      setWatchlists(json)
+    }
+  
