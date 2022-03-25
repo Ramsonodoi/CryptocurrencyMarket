@@ -1,3 +1,8 @@
+.rank-container {
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+}
 .icon-Star-Filled{
     margin: -10px;
     color: #777d84;
@@ -55,6 +60,13 @@
     -webkit-box-align: center;
     align-items: center;
     word-break: break-word;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .rank-container{
+        margin-left: -10px;
+        margin-bottom: 18px;
+    }
 }
 
 @media (min-width: 1376px){
