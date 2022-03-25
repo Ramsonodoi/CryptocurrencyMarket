@@ -12,3 +12,9 @@
     align-items: center;
     word-break: break-word;
 }
+
+@media (min-width: 1376px){
+    .nameHeader {
+        margin-top: 32px;
+    }
+}
