@@ -103,3 +103,13 @@ const CoinDetails = ({currentcurrency}) => {
   
         <div className="grid full-width-layout">
           <div className="smallcontainer container"> 
+
+          <div className="link-container-1">
+            <div className="link-container-2">
+              <Link to="/Home" className="link-class-1">Cryptocurrencies &nbsp; </Link>
+              <i className="fas fa-chevron-right"></i>
+              <Link to="/Home" className="link-class-1" >Coins</Link>
+              <i className="fas fa-chevron-right"></i>
+              <span fontSize="2,3" color="text" className="link-class-1">{id}</span>
+            </div>
+            </div>
