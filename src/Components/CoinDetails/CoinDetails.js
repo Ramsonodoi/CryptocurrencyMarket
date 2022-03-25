@@ -113,7 +113,6 @@ const CoinDetails = ({currentcurrency}) => {
               <span fontSize="2,3" color="text" className="link-class-1">{id}</span>
             </div>
             </div>
-
             <div className="upper-container top-summary-container">
             <NameSection detail={detail} />
             <PriceSection detail={detail} currentcurrency={ currentcurrency}/>
@@ -125,3 +124,32 @@ const CoinDetails = ({currentcurrency}) => {
 
             <AddInPortfolio />
           </div>
+
+          </div>
+          
+        <div className="container">
+
+          <div className="chart-options">
+            <h3 color="text" className="chart-header-text">{id.toUpperCase()} to INR Chart</h3>
+          </div>
+          <div className="chart-options">
+
+              <button type="button" onClick={() => setTimeFormat("24h")} className="btn btn-outline-secondary">
+                24h
+              </button>
+              <button onClick={() => setTimeFormat("7d")} className="btn btn-outline-secondary btn-sm ">
+                7d
+              </button>
+              <button onClick={() => setTimeFormat("1y")} className="btn btn-outline-secondary btn-sm">
+                1y
+              </button>
+           
+          </div>
+          <CoinChart data={determineTimeFormat} />
+
+        </div>
+        </div>
+
+        </>
+      )
+    }
