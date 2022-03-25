@@ -1,0 +1,9 @@
+.smallcontainer {
+    box-sizing: border-box;
+    margin: 0px;
+    padding-top: 24px;
+}
+
+.smallcontainer a:-webkit-any-link {
+    text-decoration: none;
+}
