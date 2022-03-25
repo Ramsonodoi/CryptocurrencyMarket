@@ -22,3 +22,21 @@ const WatchlistState = (props) => {
       setWatchlists(json)
     }
   
+    
+  // Add a Watchlist
+  const addWatchlist = async (coinid) => {
+    // TODO: API Call
+    // API Call 
+    const response = await fetch(`${host}/api/watchlist/addwatchlist`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid})
+    });
+
+      const watchlist = await response.json();
+      console.log(watchlist)
+    setWatchlists(watchlists.concat(watchlist))
+  }
