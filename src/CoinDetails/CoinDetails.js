@@ -89,3 +89,12 @@ const CoinDetails = ({currentcurrency}) => {
         fetchData();
 
     }, [currentcurrency]);
+
+    const { detail } = coinData
+    const { day,week,year } = coinData
+    
+  
+    const renderData = () => {
+      if (isLoading) {
+        return <Spinner/>;
+      }
