@@ -1,5 +1,6 @@
 import React , {useContext, useState}  from 'react'
 import watchlistContext from '../../../Context/watchlistContext';
+import "./NameSection.css";
 
 const NameSection = ({ detail }) => {
     
