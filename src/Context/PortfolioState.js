@@ -96,3 +96,11 @@ const deletePortfolio = async (id) => {
     setPortfolios(newPortfolios);
   }
  
+  return (
+    <PortfolioContext.Provider value={{ portfolios, addPortfolio, deletePortfolio, editPortfolio, getPortfolios }}>
+      {props.children}
+    </PortfolioContext.Provider>
+  )
+
+}
+export default PortfolioState;
