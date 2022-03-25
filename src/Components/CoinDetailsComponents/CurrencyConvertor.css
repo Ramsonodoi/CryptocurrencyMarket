@@ -1,0 +1,14 @@
+.convertor-container {
+    margin: 0px 0px 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(23, 25, 36);
+}
+
+.convertor-inner-container {
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}

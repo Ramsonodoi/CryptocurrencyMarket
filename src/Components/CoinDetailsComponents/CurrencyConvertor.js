@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./CurrencyConvertor.css"
 
 const CurrencyConvertor = ({ detail, currentcurrency }) => {
     const [from, setfrom] = useState(1)
