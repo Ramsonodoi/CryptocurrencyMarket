@@ -38,4 +38,33 @@ const PortfolioState = (props) => {
     const portfolio = await response.json();
     setPortfolios(portfolios.concat(portfolio))
   }
-
+// Delete a Portfolio
+const deletePortfolio = async (id) => {
+    // API Call
+    const response = await fetch(`${host}/api/portfolio/deleteportfolio/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      }
+    });
+    // eslint-disable-next-line
+    const json = response.json(); 
+    const newPortfolios = portfolios.filter((portfolio) => { return portfolio._id !== id })
+    setPortfolios(newPortfolios)
+  }
+// Delete a Portfolio
+const deletePortfolio = async (id) => {
+    // API Call
+    const response = await fetch(`${host}/api/portfolio/deleteportfolio/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      }
+    });
+    // eslint-disable-next-line
+    const json = response.json(); 
+    const newPortfolios = portfolios.filter((portfolio) => { return portfolio._id !== id })
+    setPortfolios(newPortfolios)
+  }
