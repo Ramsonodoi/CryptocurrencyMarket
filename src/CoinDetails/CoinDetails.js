@@ -28,3 +28,49 @@ const CoinDetails = ({currentcurrency}) => {
         };
       });
     };
+
+    //DetermineTimeFormat
+
+    const determineTimeFormat = () => {
+        switch (timeFormat) {
+          case "24h":
+            return day;
+          case "7d":
+            return week;
+          case "1y":
+            return year;
+          default:
+            return day;
+        }
+      };
+        //FetchData From Api
+        
+      useEffect(() => {
+        const fetchData = async () => {
+          setIsLoading(true);
+          const [day, week, year, detail] = await Promise.all([
+            axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
+              params: {
+                vs_currency: currentcurrency,
+                days: "1",
+              },
+            }),
+            axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
+              params: {
+                vs_currency: currentcurrency,
+                days: "7",
+              },
+            }),
+            axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart/`, {
+              params: {
+                vs_currency: currentcurrency,
+                days: "365",
+              },
+            }),
+            axios.get("https://api.coingecko.com/api/v3/coins/markets/", {
+              params: {
+                vs_currency: currentcurrency,
+                ids: id,
+              },
+            })
+          ]);
