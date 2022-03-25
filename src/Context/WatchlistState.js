@@ -82,3 +82,12 @@ const WatchlistState = (props) => {
     }  
     setWatchlists(newWatchlists);
   }
+  return (
+    <WatchlistContext.Provider value={{ watchlists, addWatchlist, deleteWatchlist, editWatchlist, getWatchlists }}>
+      {props.children}
+    </WatchlistContext.Provider>
+  )
+
+}
+export default WatchlistState;
+
