@@ -1,3 +1,40 @@
+.icon-Star-Filled{
+    margin: -10px;
+    color: #777d84;
+}
+.watchlist-icon {
+    -webkit-box-align: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgb(207, 214, 228);
+    border-radius: 8px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-box-pack: center;
+    justify-content: center;
+    outline: 0px;
+    font-weight: 600;
+    width: auto;
+    height: 32px;
+    font-size:18px;
+    padding: 0px 16px;
+    line-height: 18px;
+}
+.watchlistbtn{
+    width: auto;
+    padding: 0px 8px;
+}
+
+.watchlist-icon-1 {
+    border-radius: 8px;
+    padding: 0px;
+    width: 32px;
+}
+.watchlist-icon-container{
+    position: relative;
+    right: -99px;
+}
 .coinname{
     margin-bottom: 6px;
 }
