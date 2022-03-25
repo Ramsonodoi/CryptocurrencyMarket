@@ -92,6 +92,14 @@ a:not([href]):not([tabindex]) {
   cursor: pointer;
 }
 
+.fa-chevron-right{
+    color: rgb(88, 102, 126);
+    margin-left: -23px;
+    margin-top: 3px;
+    margin-right: 8px;
+}
+
+
 .link-container-2 a.link-class-1 {
   color: rgb(88, 102, 126);
   padding-right: 28px;
