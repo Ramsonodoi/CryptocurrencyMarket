@@ -1,3 +1,21 @@
+.namePillPrimary {
+    background-color: var(--color-neutral-5);
+    color: rgb(255, 255, 255);
+}
+.namePill{
+    text-transform:capitalize;
+}
+.nameSymbol,.namePill {
+    background-color: var(--color-neutral-2);
+    color: var(--color-neutral-6);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size:18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-left: 12px;
+    margin-right: 6px;
+}
 .rank-container {
     box-sizing: border-box;
     margin: 0px;
