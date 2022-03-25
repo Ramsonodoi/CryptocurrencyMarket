@@ -22,4 +22,20 @@ const PortfolioState = (props) => {
     const json = await response.json() 
     setPortfolios(json)
   }
+  // Add a Portfolio
+  const addPortfolio = async (coinid, amount) => {
+    // TODO: API Call
+    // API Call 
+    const response = await fetch(`${host}/api/portfolio/addportfolio`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        "auth-token": localStorage.getItem('token')
+      },
+      body: JSON.stringify({coinid, amount})
+    });
+
+    const portfolio = await response.json();
+    setPortfolios(portfolios.concat(portfolio))
+  }
 
