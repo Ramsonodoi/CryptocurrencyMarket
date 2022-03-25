@@ -113,3 +113,15 @@ const CoinDetails = ({currentcurrency}) => {
               <span fontSize="2,3" color="text" className="link-class-1">{id}</span>
             </div>
             </div>
+
+            <div className="upper-container top-summary-container">
+            <NameSection detail={detail} />
+            <PriceSection detail={detail} currentcurrency={ currentcurrency}/>
+
+            <StateSection detail={detail}  currentcurrency={ currentcurrency}/>
+            <div className="add-in-portfolio">
+              <CurrencyConvertor detail={detail} currentcurrency={ currentcurrency}/>
+            </div>
+
+            <AddInPortfolio />
+          </div>
