@@ -104,6 +104,12 @@
     margin: 0px;
 }
 
+.full-width-layout { 
+    padding: 0px;
+    max-width: 100%;
+    background: linear-gradient(rgb(237 244 255) 0%, rgba(248, 250, 253, 0) 413px);
+}
+
 /* media queries */
 
 @media only screen and (max-device-width: 480px) {
