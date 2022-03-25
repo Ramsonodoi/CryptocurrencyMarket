@@ -49,6 +49,21 @@
    display: flex;
 }
 
+.link-container-2 a.link-class-1 {
+    color: rgb(88, 102, 126);
+    padding-right: 28px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.link-container-2 span.link-class-1 {
+    flex: 1 1 0%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: capitalize;
+}
+
 /* media queries */
 
 @media only screen and (max-device-width: 480px) {
@@ -62,5 +77,9 @@
 
     .link-container-1 span{
         font-size: 14px;
+    }
+    .link-container-2 a{
+        font-size: 12px;
+       
     }
 }
