@@ -35,3 +35,10 @@
     -webkit-box-align: center;
     align-items: center;
 }
+
+.currency-image {
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+    margin-right: 12px;
+}
