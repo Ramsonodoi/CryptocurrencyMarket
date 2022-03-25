@@ -153,3 +153,14 @@ const CoinDetails = ({currentcurrency}) => {
         </>
       )
     }
+
+    return (
+      <>
+        {renderData()}
+    
+       
+      </>
+    )
+  };
+  
+  export default CoinDetails;
