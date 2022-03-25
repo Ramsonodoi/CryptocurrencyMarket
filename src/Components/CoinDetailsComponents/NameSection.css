@@ -6,3 +6,15 @@
     box-sizing: border-box;
     margin: 0px 0px 16px;
 }
+.nameHeader {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    word-break: break-word;
+}
+
+@media (min-width: 1376px){
+    .nameHeader {
+        margin-top: 32px;
+    }
+}
