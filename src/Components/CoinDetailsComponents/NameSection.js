@@ -15,4 +15,16 @@ const NameSection = ({ detail }) => {
         setWatchlist({ coinid: "" })
         setturnyellow("true")
     }
+
+    const renderthiscomponent = () => {
+        if (detail) {
+            return (
+                <div className=" nameSection-1 nameSection">
+                <div className=" nameSection-upper-part nameHeader">
+                    <img src={detail.image} height="32" width="32" alt={detail.symbol} />
+                    <h2 className=" coin-name-n-logo-container h1" color="text">
+                        <div className="coinname">{detail.name}</div><small className="nameSymbol">{detail.symbol.toUpperCase()}</small></h2>
+            )
+        }
+            
 }
