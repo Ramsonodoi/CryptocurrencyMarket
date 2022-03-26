@@ -91,4 +91,3 @@ const WatchlistState = (props) => {
   )
 
 }
-export default WatchlistState;

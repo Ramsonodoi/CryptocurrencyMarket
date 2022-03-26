@@ -1,0 +1,87 @@
+@media only screen and (max-device-width: 1161px){
+  .display-none-flex{
+    display: none;
+  }
+  .navbar-toggler{
+    position: relative;
+    left: 0%;
+  }
+}
+@media only screen and (min-device-width: 1161px){
+  .display-none-flex{
+    display: flex;
+  }
+}
+.container-fluid{
+  z-index: 5;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  /* padding-left: 30px; */
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4649ff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.btn-login{
+  border: none;
+  margin-right: 10px;
+  background-color: #ffffff;
+  }
+  .btn-login:hover{
+    /* border: 2px solid rgb(184, 181, 181); */
+    border-radius: 10px;
+  }
+  
+  .btn{
+    background-color: #3861fb;
+    /* margin-right: 10px; */
+    border-radius: 10px;
+    color: #ffffff;
+    /* padding-left: 20px; */
+  }
+  .btn:hover{
+    background-color: #1443f0;
+    color: #ffffff;
+  }
+  .change-currency{
+    display: flex;
+    border: 2px solid white;
+    }
+    
+    .btn-outline-secondary{
+    border: none !important;
+    
+    outline: none !important;
+    box-shadow: none !important;
+    }
+    .btn-outline-secondary:hover{
+      border: none;
+      outline: none !important;
+      box-shadow: none !important;
+    
+      }
+    
+      .btn-outline-secondary::-moz-focus-inner {
+        border: 0;
+        box-shadow: none !important;
+        outline: 0 !important;
+    
+     }
