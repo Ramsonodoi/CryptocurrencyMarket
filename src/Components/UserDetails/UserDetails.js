@@ -5,7 +5,7 @@ const UserDetails = () => {
     const host = "https://cryptomarts.herokuapp.com"
     const [userData, setuserData] = useState({})
 
-    // let location = useLocation();
+   
     let history = useHistory();
 
     useEffect(() => {
