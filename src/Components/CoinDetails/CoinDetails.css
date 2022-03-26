@@ -61,14 +61,12 @@
     line-height: 18px;
 }
 a, a:not([href]):not([tabindex]) {
-    /* color: rgb(56, 97, 251); */
+    
     text-decoration: none;
     cursor: pointer;
 }
 .fa-chevron-right{
     color: rgb(88, 102, 126);
-    /* height: 8px; */
-    /* size: 11px; */
     margin-left: -23px;
     margin-top: 3px;
     margin-right: 8px;
@@ -98,7 +96,7 @@ a, a:not([href]):not([tabindex]) {
 .link-container-1 {
     box-sizing: border-box;
     margin: 0px;
-    /* display: none; */
+  
 }
 
 .nameSection-1 {
@@ -252,12 +250,11 @@ a, a:not([href]):not([tabindex]) {
 .ud {
     font-size: 14px;
     font-weight: 600;
-    /* padding: 5px 10px; */
+    
 }
 .price-change-btn {
     white-space: nowrap;
     border-radius: 8px;
-    /* padding: 3px 10px; */
     background-color: #16c784;
     color: rgb(255, 255, 255);
 }
@@ -332,7 +329,6 @@ a, a:not([href]):not([tabindex]) {
 .statsBlock {
     grid-column: span 3 / auto;
     width: 100%;
-    /* border-bottom: 1px solid var(--color-light-neutral-2); */
     display: flex;
     flex-direction: column;
     border-right: 2px solid  var(--color-light-neutral-2);
@@ -626,7 +622,7 @@ p {
     .priceSection {
         margin-top: 14px;
         flex: 0 0 34%;
-        /* border-bottom: 2px solid  var(--color-light-neutral-2); */
+        
     }
     .priceHeading {
         text-align: left;
@@ -684,7 +680,7 @@ p {
     }
     .statsContainer {
         display: flex;
-        /* grid-template-columns: repeat(12, 1fr); */
+        
     }
     .statsBlock:first-of-type {
         padding-left: 0px;
@@ -694,7 +690,7 @@ p {
         border-bottom: none;
         border-right: 1px solid var(--color-light-neutral-2);
         padding-left: 24px;
-        /* padding-top: 8px; */
+       
     }
     .statsItemRight {
         display: flex;
@@ -715,8 +711,6 @@ p {
     .grid {
         box-sizing: border-box;
         width: 100%;
-        /* padding-right: 16px; */
-        /* padding-left: 16px; */
         padding: 0px;
         margin-right: auto;
         margin-left: auto;
@@ -729,10 +723,10 @@ p {
     }
     .link-container-2 a{
         font-size: 12px;
-        /* display: none; */
+       
     }
     .fas{
-        /* font-weight: 600; */
+        
         margin-bottom: -200px;
     }
     .link-container-1 span{
@@ -750,9 +744,7 @@ p {
         font-size: 14px;
         margin-bottom:  8px;
     }
-    /* .priceValue{
-        margin-right: 147px;
-    } */
+   
     .priceTitle{
         
         margin-bottom: 12px;
