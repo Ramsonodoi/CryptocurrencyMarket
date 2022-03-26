@@ -19,7 +19,7 @@
   display: inline-block;
   position: relative;
   color: #0087ca;
-  /* padding-left: 30px; */
+  
 }
 
 .hover-underline-animation:after {
@@ -46,16 +46,14 @@
   background-color: #ffffff;
   }
   .btn-login:hover{
-    /* border: 2px solid rgb(184, 181, 181); */
     border-radius: 10px;
   }
   
   .btn{
     background-color: #3861fb;
-    /* margin-right: 10px; */
-    border-radius: 10px;
+   border-radius: 10px;
     color: #ffffff;
-    /* padding-left: 20px; */
+   
   }
   .btn:hover{
     background-color: #1443f0;
