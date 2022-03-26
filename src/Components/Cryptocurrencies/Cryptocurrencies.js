@@ -38,6 +38,9 @@ const Cryptocurrencies = ({ currentcurrency }) => {
                     </div>
                 </div>
             </div>
+            <div className='filter-button'>
+                <button style={{borderRadius: "8px"}} >Filters</button>
+                </div>
             <div className="Container setMargin">
                 <div className="d-flex flex-row bd-highlight mb-3">
                     <div className="p-2 bd-highlight">
