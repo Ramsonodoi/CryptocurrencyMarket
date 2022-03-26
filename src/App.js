@@ -11,7 +11,7 @@ import Watchlist from "./Components/Watchlist/Watchlist";
 import WatchlistState from './Context/WatchlistState';
 import PortfolioState from "./Context/PortfolioState";
 import UserDetails from "./Components/UserDetails/UserDetails";
-import Aboutus from "./Components/Aboutus/Aboutus";
+
 
 function App() {
 
@@ -64,7 +64,7 @@ function App() {
                   </Route>
                   <Route exact path="/Aboutme">
 
-                  <Aboutus />
+                
                 </Route>
             </Switch>
             </div>
