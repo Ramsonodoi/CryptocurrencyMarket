@@ -64,6 +64,11 @@ a{
     position: relative;
 }
 
+.filter-button{
+    display: flex;
+    justify-content: right;
+    
+}
   
   
 @media only screen and (max-device-width: 480px) {
