@@ -37,9 +37,7 @@
 
 #show-eye{
     position: relative;
-    /* bottom: 38px; */
     float : right;
-    /* border-top-left: none; */
     border: 2px solid #d5dadf;
     width: 10%;
     height: 39px;
@@ -51,10 +49,7 @@
     bottom:48px;
 
 }
-/* #Password{
-    border-top-right-radius: none;
-    width: 95%;
-} */
+
 
 
 @media only screen and (max-device-width: 480px) {
@@ -66,7 +61,7 @@
     }
     .LoginTitle{
         margin-top: 10px;
-        /* margin-left: 10px; */
+       
     }
     
 }
