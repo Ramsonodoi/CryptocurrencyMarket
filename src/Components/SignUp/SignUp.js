@@ -29,14 +29,14 @@ function SignUp({ changeloggedin, changeauthtoken }) {
             localStorage.setItem('token', json.authtoken);
             history.push("/");
             changeloggedin("true")
-            // console.log("Logged in")
+            
         }
 }
 
 
 const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
-    // console.log(credentials.password)
+   
 }
 const [show, setshow] = useState('false')
 
@@ -44,7 +44,7 @@ const [cpassword, setcpassword] = useState()
 
 const onChange2 = (e) => {
     setcpassword({ ...cpassword, [e.target.name]: e.target.value })
-    // console.log(cpassword)
+   
 }
 
 

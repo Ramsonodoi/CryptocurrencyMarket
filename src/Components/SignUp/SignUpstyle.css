@@ -54,7 +54,6 @@
     bottom: 48px;
     z-index: 1000;
     float : right;
-    /* border-top-left: none; */
     border: 2px solid #d5dadf;
     padding: 2.20%;
     border-top-right-radius: 10px;
@@ -67,11 +66,7 @@
     border-right: none;
     width: 90.8%;
 }
-/* .password-input{
-    border-top-right-radius: none;
-    width: 90.8%;
-    border-right: none;
-} */
+
 input{  
     margin: 0px;
     margin-bottom: 10px;
@@ -88,7 +83,7 @@ input{
     }
     .Head{
         margin-top: 10px;
-        /* margin-left: 10px; */
+      
     }
     
 }

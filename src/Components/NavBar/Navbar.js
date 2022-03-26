@@ -17,7 +17,6 @@ const Navbar = ({ currentcurrency, changecurrency, changeloggedin, changeauthtok
 
     const handleLogout = async () => {
         localStorage.clear();
-        // console.log("Logged out")
         await history.push("/");
         changeloggedin("false")
         changeauthtoken(" ")

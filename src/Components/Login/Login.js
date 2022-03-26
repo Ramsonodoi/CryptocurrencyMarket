@@ -16,19 +16,19 @@ const Login = ({ changeloggedin, changeauthtoken }) => {
       body: JSON.stringify({ email: credentials.email, password: credentials.password })
     });
     const json = await response.json()
-    // console.log(json)
+ 
+    
     if (json.error !== "Wrong Credentials") {
       changeauthtoken(json.authtoken)
       localStorage.setItem('token', json.authtoken);
       history.push("/");
       changeloggedin("true");
-      // console.log("Logged in")
-      // console.log(localStorage.getItem('token'))
+    
 
     }
     else {
       setwrongcredentials("true")
-      // console.log("wrongcredentials")
+      
     }
   }
   const onChange = (e) => {

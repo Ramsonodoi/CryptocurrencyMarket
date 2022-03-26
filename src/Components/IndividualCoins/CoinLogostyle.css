@@ -10,7 +10,7 @@
   height: 80px;
   font-weight: 500;
   position: relative;
-  /* top: -4px */
+  
 }
 .index p{
     line-height: 1.5;
@@ -136,8 +136,7 @@
     .coinname{
         display: block;}
     .index{
-        /* width: 20px;
-         */
+        
          display: none;
     }
     .for-hover{
@@ -156,7 +155,7 @@
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    /* width: 250px; */
+   
   }
 .abc li{
     display: inline;
