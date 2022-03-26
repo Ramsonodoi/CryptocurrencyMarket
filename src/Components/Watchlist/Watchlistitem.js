@@ -5,11 +5,6 @@ import './Watchlistitemstyle.css'
 
 
 const Watchlistitem = (props) => {
-
-    // const {currentcurrency} = currentcurrency
-
-
-
     const context = useContext(watchlistContext);
     const { deleteWatchlist } = context;
          // eslint-disable-next-line
@@ -28,7 +23,6 @@ const Watchlistitem = (props) => {
                 }
             })
 
-            // console.log(response.data);
             setCoins(response.data);
         }
         fetchData1();
