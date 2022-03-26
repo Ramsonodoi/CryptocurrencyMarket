@@ -1,3 +1,10 @@
+.header-image{
+    background-image: url("https://minutes.co/wp-content/uploads/2019/06/shutterstock_1044225994-e1561737001560.jpg");
+    height: 100vh;
+    color: white;
+    /* margin-bottom: 100px; */
+}
+
 .setMargin{
     margin: 10px 30px;
 }
@@ -35,6 +42,7 @@ div.scrollmenu {
     box-sizing: border-box;
     border-spacing: 0px;
     font-size: 14px;
+    /* width: 125px; */
     height: 80px;
 }
 table, th, td {
@@ -101,6 +109,7 @@ a{
         border-bottom: 2px solid #eff2f5;
         border-top: 2px solid #eff2f5;
         height: 46px;
+        /* padding-left: 67px; */
         padding-left: 74px;
     }
     .dwn{
