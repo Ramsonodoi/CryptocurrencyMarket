@@ -16,7 +16,6 @@ const CoinLogo = ({ coin }) => {
     const handleClick = (e) => {
         e.preventDefault();
         addWatchlist(coin.id);
-        // localStorage.setItem()
         setWatchlist({ coinid: "" })
         setturnyellow("true")
         alert("Added to watchlist")
