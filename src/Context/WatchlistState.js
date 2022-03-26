@@ -2,9 +2,8 @@ import WatchlistContext from "./watchlistContext";
 import { useState } from "react";
 
 const WatchlistState = (props) => {
-  const host = "https://my--crypto.herokuapp.com"
-    // "https://git.heroku.com/my--crypto.git"
-  // "http://localhost:5000"
+  const host = "https://cryptomarts.herokuapp.com"
+   
   const watchlistsInitial = []
   const [watchlists, setWatchlists] = useState(watchlistsInitial)
 

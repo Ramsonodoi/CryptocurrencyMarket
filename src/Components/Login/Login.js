@@ -8,7 +8,7 @@ const Login = ({ changeloggedin, changeauthtoken }) => {
   const [wrongcredentials, setwrongcredentials] = useState("false")
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://my--crypto.herokuapp.com/api/auth/login", {
+    const response = await fetch("https://cryptomarts.herokuapp.com/api/auth/login", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

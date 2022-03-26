@@ -10,7 +10,7 @@ function SignUp({ changeloggedin, changeauthtoken }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const { name, email, password } = credentials;
-        const response = await fetch("https://my--crypto.herokuapp.com/api/auth/createuser", {
+        const response = await fetch("https://cryptomarts.herokuapp.com/api/auth/createuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
