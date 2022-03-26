@@ -27,25 +27,6 @@ const Portfolio = ({ currentcurrency }) => {
   // eslint-disable-next-line
   const refClose = useRef(null)
 
-
-  // eslint-disable-next-line
-  // const [portfolio, setPortfolio] = useState({ id: "", ecoinid: "", eamount: "" })
-
-  // const updatePortfolio = (currentPortfolio) => {
-  //   ref.current.click();
-  //   setPortfolio({ id: currentPortfolio._id, ecoinid: currentPortfolio.coinid, eamount: currentPortfolio.amount })
-  // }
-
-  // const handleClick = (e)=>{ 
-  //     editPortfolio(portfolio.id, portfolio.ecoinid, portfolio.eamount)
-  //     refClose.current.click();
-  // }
-
-  // const onChange = (e)=>{
-  //     setPortfolio({...portfolio, [e.target.name]: e.target.value})
-  // }
-
-
   const renderifnotloggedin = () => {
     return (
       <div className="grid full-width-layout">
@@ -94,7 +75,6 @@ const Portfolio = ({ currentcurrency }) => {
     )
   }
 
-  // console.log(portfolios.length)
 
   const { addPortfolio } = context;
 
@@ -105,7 +85,6 @@ const Portfolio = ({ currentcurrency }) => {
     e.preventDefault();
     addPortfolio(portfolio.coinid, portfolio.amount);
     setPortfolio({ coinid: "", amount: "" })
-    // console.log(portfolio.amount)
     const response = await axios.get("https://api.coingecko.com/api/v3/coins/markets", {
       params: {
         vs_currency: currentcurrency,
@@ -118,10 +97,6 @@ const Portfolio = ({ currentcurrency }) => {
   const onChange = (e) => {
     setPortfolio({ ...portfolio, [e.target.name]: e.target.value })
   }
-
-
-
-
 
   const renderIfloggedin = () => {
     return (
@@ -240,10 +215,6 @@ const Portfolio = ({ currentcurrency }) => {
                         </div>
                       </div>
                       :
-
-
-
-
 
                       portfolios.map((portfolio) => {
                         return <Portfolioitem key={portfolio._id} currentcurrency={currentcurrency} currentBalance={currentBalance} setcurrentBalance={setcurrentBalance} portfolio={portfolio} />
