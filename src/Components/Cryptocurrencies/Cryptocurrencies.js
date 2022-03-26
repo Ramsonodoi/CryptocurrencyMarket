@@ -32,9 +32,9 @@ const Cryptocurrencies = ({ currentcurrency }) => {
         <div>
             <div className="header-image" >
                 <div>
-                    <div className="fs-1"> <b> Live cry­pto­currency prices</b>
+                    <div className="fs-1"> <b> Cryptocurrency Market</b>
                     </div>
-                    <div className="fs-4 float-left"> Check the latest rates before you buy. The table below shows how different cryptocurrencies are performing in real-time.
+                    <div className="fs-4 float-left"> Check lastest statistics about your assets.
                     </div>
                 </div>
             </div>
