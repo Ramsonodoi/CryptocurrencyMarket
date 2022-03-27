@@ -49,7 +49,7 @@ const Navbar = ({
           >
             <img
               className="main-logo mx-4 navbar-brand"
-              src="https://user-images.githubusercontent.com/65165139/132937951-9e08e004-4943-4410-a80d-66b4e812b1f7.png"
+              src="https://img.favpng.com/13/20/21/cryptocurrency-wallet-bitcoin-litecoin-electrum-feathercoin-png-favpng-NKMyZmKAu5fec3FTJWhEx4b4H_t.jpg"
               alt="Logo"
               style={{ width: "42px", height: "49px" }}
             />
