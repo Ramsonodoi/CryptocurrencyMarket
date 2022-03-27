@@ -53,8 +53,8 @@ const Portfolioitem = (props) => {
                                 <td style={stylingObject.dw}><i className="far fa-trash-alt mx-2" onClick={handledelete}></i></td>
                                 <td style={stylingObject.td}>{portfolio.coinid}</td>
                                 <td style={stylingObject.td}>{portfolio.amount}</td>
-                                <td style={stylingObject.td}>{(currentcurrency==="inr")?"₹":"$"}&nbsp;{coins[0].current_price}</td>
-                                <td style={stylingObject.td}>{(currentcurrency==="inr")?"₹":"$"}&nbsp;{portfolio.amount * coins[0].current_price}</td>
+                                <td style={stylingObject.td}>{(currentcurrency==="usd")?"$":"₹"}&nbsp;{coins[0].current_price}</td>
+                                <td style={stylingObject.td}>{(currentcurrency==="usd")?"$":"₹"}&nbsp;{portfolio.amount * coins[0].current_price}</td>
                             </tr>
                         </tbody>
                     </table>

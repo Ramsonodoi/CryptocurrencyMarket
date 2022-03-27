@@ -12,10 +12,10 @@ const Navbar = ({
   let history = useHistory();
 
   const handlesetcurrency1 = () => {
-    changecurrency("inr");
+    changecurrency("usd");
   };
   const handlesetcurrency2 = () => {
-    changecurrency("usd");
+    changecurrency("inr");
   };
 
   const handlesetcurrency3 = () => {
@@ -120,23 +120,23 @@ const Navbar = ({
                     type="button"
                     onClick={handlesetcurrency1}
                     className={
-                      currentcurrency === "inr"
-                        ? "dark-grey btn-outline-secondary"
-                        : "light-grey btn-outline-secondary"
-                    }
-                  >
-                    INR
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handlesetcurrency2}
-                    className={
                       currentcurrency === "usd"
                         ? "dark-grey btn-outline-secondary"
                         : "light-grey btn-outline-secondary"
                     }
                   >
                     USD
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handlesetcurrency2}
+                    className={
+                      currentcurrency === "inr"
+                        ? "dark-grey btn-outline-secondary"
+                        : "light-grey btn-outline-secondary"
+                    }
+                  >
+                    INR
                   </button>
                   <button
                     type="button"

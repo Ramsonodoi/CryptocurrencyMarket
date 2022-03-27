@@ -15,7 +15,7 @@ import UserDetails from "./Components/UserDetails/UserDetails";
 
 function App() {
 
-  const [currency, setcurrency] = useState("inr")
+  const [currency, setcurrency] = useState("usd")
   const [loggedin, setloggedin] = useState("false")
   const [authtoken, setauthtoken] = useState("")
 

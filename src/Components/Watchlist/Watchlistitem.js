@@ -51,7 +51,7 @@ const Watchlistitem = (props) => {
                         <div className="priceSection decrease-flex-21">
                             <h1 className="priceHeading">{coins[0].name} Price<small>({coins[0].symbol.toUpperCase()})</small></h1>
                             <div className="priceTitle">
-                                <div className="priceValue ">{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;{coins[0].current_price}</div>
+                                <div className="priceValue ">{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;{coins[0].current_price}</div>
                                 <span className=" price-change-btn ud">
                                     <span className=" price-change-btn upd">
                                         {" "}
@@ -66,7 +66,7 @@ const Watchlistitem = (props) => {
                                         Low:
                                     </span>
                                     <span className=" Low-High-data">
-                                        &nbsp;{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;
+                                        &nbsp;{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;
                                         {coins[0].low_24h}
                                     </span>
                                 </div>
@@ -75,7 +75,7 @@ const Watchlistitem = (props) => {
                                     <span className=" Low-High-Text">High:
                                     </span>
                                     <span className=" Low-High-data">
-                                        &nbsp;{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;{coins[0].high_24h}
+                                        &nbsp;{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;{coins[0].high_24h}
                                     </span>
                                 </div>
                                 <div className=" namePillBase" display="inline-block">24h
@@ -91,7 +91,7 @@ const Watchlistitem = (props) => {
                                         </div>
                                         <div className="statsItemRight">
                                             <div className="statsValue">
-                                                &nbsp;{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;{coins[0].market_cap}
+                                                &nbsp;{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;{coins[0].market_cap}
                                             </div>
                                             <span className=" percent-change">
                                                 {coins[0].market_cap_change_percentage_24h}%
@@ -107,7 +107,7 @@ const Watchlistitem = (props) => {
                                         </div>
                                         <div className="statsItemRight">
                                             <div className="statsValue">
-                                                &nbsp;{(currentcurrency === "inr") ? "₹" : "$"}&nbsp; {coins[0].total_volume}
+                                                &nbsp;{(currentcurrency === "usd") ? "$" : "₹"}&nbsp; {coins[0].total_volume}
                                             </div>
                                         </div>
                                     </div>

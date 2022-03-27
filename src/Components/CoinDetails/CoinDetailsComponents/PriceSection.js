@@ -28,7 +28,7 @@ const PriceSection = ({detail,currentcurrency}) => {
                                     Low:
                                 </span>
                                 <span className=" Low-High-data">
-                                &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp;
+                                &nbsp;{(currentcurrency==="usd")?"$":"₹"}&nbsp;
                                     {detail.low_24h}
                                 </span>
                             </div>
@@ -37,7 +37,7 @@ const PriceSection = ({detail,currentcurrency}) => {
                                 <span className=" Low-High-Text">High:
                                 </span>
                                 <span className=" Low-High-data">
-                                &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp;{detail.high_24h}
+                                &nbsp;{(currentcurrency==="usd")?"$":"₹"}&nbsp;{detail.high_24h}
                                 </span>
                             </div>
                             <div className=" namePillBase" display="inline-block">24h
