@@ -137,7 +137,7 @@ const Portfolio = ({ currentcurrency }) => {
                                   </span>
                                 </p>
                                 <p>
-                                  <b>{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;{currentBalance}</b>
+                                  <b>{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;{currentBalance}</b>
 
                                 </p>
                               </div>
@@ -162,7 +162,7 @@ const Portfolio = ({ currentcurrency }) => {
                       <div display="flex" height="48" className="amount-container">
                         <div display="flex" width="1,1,auto" className="amount-container-left">
                           <div className="price">
-                            <b>{(currentcurrency === "inr") ? "₹" : "$"}&nbsp;{currentBalance}</b>
+                            <b>{(currentcurrency === "usd") ? "$" : "₹"}&nbsp;{currentBalance}</b>
 
                           </div>
                         </div>
