@@ -12,18 +12,18 @@ const Coins = ({ coin, currentcurrency }) => {
                 <tr>
                     <td>
                         <div >
-                            <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.current_price}</div>
+                            <div className="cmc-div"> &nbsp;{(currentcurrency==="eur")?"€":"$"}&nbsp; {coin.current_price}</div>
                         </div>
                     </td>
                     <td>
                         <div >
-                            <div className="cmc-div"> &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.high_24h}</div>
+                            <div className="cmc-div"> &nbsp;{(currentcurrency==="eur")?"€":"$"}&nbsp; {coin.high_24h}</div>
                         </div>
                     </td>
 
                     <td>
                         <div >
-                            <div className="cmc-div">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.low_24h}</div>
+                            <div className="cmc-div">  &nbsp;{(currentcurrency==="eur")?"€":"$"}&nbsp; {coin.low_24h}</div>
                         </div>
                     </td>
                     <td>
@@ -37,7 +37,7 @@ const Coins = ({ coin, currentcurrency }) => {
                     </td>
                     <td>
                         <div >
-                            <div className="cmc-div">  &nbsp;{(currentcurrency==="inr")?"₹":"$"}&nbsp; {coin.market_cap_change_24h}</div>
+                            <div className="cmc-div">  &nbsp;{(currentcurrency==="eur")?"€":"$"}&nbsp; {coin.market_cap_change_24h}</div>
                         </div>
                     </td>
                     <td>
