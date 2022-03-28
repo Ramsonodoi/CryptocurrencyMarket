@@ -42,7 +42,7 @@ Users should be able to:
 
 ## Our process
 
-A team of two developers, one front-end developer and one back-end developer used React and   
+A team of two developers, one front-end developer and one back-end developer used React and  express, mongoDB to build the project. Finally the project was deployed via Netlify.  
 
 
 ### Built with
