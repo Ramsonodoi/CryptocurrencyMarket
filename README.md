@@ -18,10 +18,11 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ntiBoateng/cryptocurrency-market](https://github.com/ntiBoateng/cryptocurrency-market)
+- Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
+
 - Live Site URL: [https://cryptocurrency-market.netlify.app/](https://cryptocurrency-market.netlify.app)
 
-- Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
+
 
 
 
