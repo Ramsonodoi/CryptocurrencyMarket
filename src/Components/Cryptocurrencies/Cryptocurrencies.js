@@ -6,6 +6,7 @@ import "../IndividualCoins/Coinsstyle.css"
 import "../Cryptocurrencies/Cryptocurrencies.css";
 import Footer from '../Footer/Footer';
 
+//Code For Displaying The First 100 Cryptocurrency Coins
 
 const Cryptocurrencies = ({ currentcurrency }) => {
 
@@ -13,6 +14,9 @@ const Cryptocurrencies = ({ currentcurrency }) => {
 
 
     useEffect(() => {
+         
+        // URLS COINGECKO  Limits : 50 calls/minute
+        // Used for fewer requests
 
         const fetchData1 = async () => {
             const response = await axios.get("https://api.coingecko.com/api/v3/coins/markets", {
