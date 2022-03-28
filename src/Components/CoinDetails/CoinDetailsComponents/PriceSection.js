@@ -1,5 +1,7 @@
 import React from 'react'
 
+//Code For Showing The Price Of Cryptocurrencies Coins For Dollar And Euro
+
 const PriceSection = ({detail,currentcurrency}) => {
 
     const renderpricecomponent = () => {
