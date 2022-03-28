@@ -31,6 +31,9 @@ Users should be able to:
 ### CryptoCurrencies Table
 ![image](./public/CryptoTable.png)
 
+### Detail of Every Coin
+![image](./public/detail%20of%20every%20coin.png)
+
 
 ## Our process
 
