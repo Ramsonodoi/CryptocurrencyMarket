@@ -15,16 +15,14 @@ const Navbar = ({
     changecurrency("usd");
   };
   const handlesetcurrency2 = () => {
-    changecurrency("inr");
-  };
-
-  const handlesetcurrency3 = () => {
     changecurrency("eur");
   };
 
-  const handlesetcurrency4 = () => {
+  const handlesetcurrency3 = () => {
     changecurrency("ghs");
   };
+
+ 
 
   const handleLogout = async () => {
     localStorage.clear();
@@ -131,17 +129,6 @@ const Navbar = ({
                     type="button"
                     onClick={handlesetcurrency2}
                     className={
-                      currentcurrency === "inr"
-                        ? "dark-grey btn-outline-secondary"
-                        : "light-grey btn-outline-secondary"
-                    }
-                  >
-                    INR
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handlesetcurrency3}
-                    className={
                       currentcurrency === "eur"
                         ? "dark-grey btn-outline-secondary"
                         : "light-grey btn-outline-secondary"
@@ -151,7 +138,7 @@ const Navbar = ({
                   </button>
                   <button
                     type="button"
-                    onClick={handlesetcurrency4}
+                    onClick={handlesetcurrency3}
                     className={
                       currentcurrency === "ghs"
                         ? "dark-grey btn-outline-secondary"
@@ -160,6 +147,7 @@ const Navbar = ({
                   >
                     GHS
                   </button>
+                  
                 </div>
                 {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
