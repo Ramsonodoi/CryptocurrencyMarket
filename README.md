@@ -25,7 +25,7 @@ Users should be able to:
 - Live Site URL: [] ()
 
 
-### Screenshot
+### Landing Page
 ![image](./public/CryptoMarket.png)
 
 
