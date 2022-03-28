@@ -28,6 +28,9 @@ Users should be able to:
 ### Landing Page
 ![image](./public/CryptoMarket.png)
 
+### CryptoCurrencies Table
+![image](./public/CryptoTable.png)
+
 
 ## Our process
 
