@@ -34,6 +34,9 @@ Users should be able to:
 ### Detail of Every Coin
 ![image](./public/detail%20of%20every%20coin.png)
 
+### Coin Chart
+![image](./public/CoinChart.png)
+
 
 ## Our process
 
