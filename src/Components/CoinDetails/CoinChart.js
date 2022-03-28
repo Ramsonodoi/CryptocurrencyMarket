@@ -2,6 +2,7 @@ import React from 'react';
 import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
  
+//Line Chart Code For Displaying Coin Data over a period of time
 const CoinChart = ({ data }) => {
     const options = {
     animationEnabled: true,
