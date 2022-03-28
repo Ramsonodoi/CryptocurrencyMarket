@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Code For The Showing The Current State Of The Cryptocurrencies Coins In both Dollar And Euro From MarketCap, Volume, Circulating Supply, Max Supply and Total Supply
 const StateSection = ({ detail, currentcurrency}) => {
 
     const renderStateComponent = () => {
