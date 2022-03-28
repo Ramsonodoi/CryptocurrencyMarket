@@ -16,6 +16,7 @@ const CoinDetails = ({currentcurrency}) => {
   const [isLoading, setIsLoading] = useState(false);
   const [timeFormat, setTimeFormat] = useState("24h");
 
+  // Code Showing The Details of Coins Using Line Chart From 24h, 7d and 1yr 
   const formatData = (data) => {
     return data.map((el) => {
       return {
