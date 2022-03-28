@@ -22,7 +22,7 @@ Users should be able to:
 - Live Site URL: [https://cryptocurrency-market.netlify.app/](https://cryptocurrency-market.netlify.app)
 
 - Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
-- Live Site URL: [] ()
+
 
 
 ### Landing Page
