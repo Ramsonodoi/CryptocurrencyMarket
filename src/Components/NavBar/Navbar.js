@@ -2,6 +2,8 @@ import React from "react";
 import "./Navbarstyle.css";
 import { Link, useHistory, useLocation } from "react-router-dom";
 
+// Navbar Component Which Shows Cryptocurrencies Portfolio Watchlist, Currency(USD EUR GHS) And Login And SignUp 
+
 const Navbar = ({
   currentcurrency,
   changecurrency,
@@ -21,8 +23,6 @@ const Navbar = ({
   const handlesetcurrency3 = () => {
     changecurrency("ghs");
   };
-
- 
 
   const handleLogout = async () => {
     localStorage.clear();
@@ -147,7 +147,6 @@ const Navbar = ({
                   >
                     GHS
                   </button>
-                  
                 </div>
                 {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
