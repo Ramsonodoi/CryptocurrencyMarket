@@ -18,7 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
+- Frontend Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
+- Backend Solution URL: [https://github.com/ntiBoateng/cryptoBackend.git](https://github.com/ntiBoateng/cryptoBackend.git)
 
 - Live Site URL: [https://cryptocurrency-market.netlify.app/](https://cryptocurrency-market.netlify.app)
 
@@ -45,17 +46,29 @@ A team of two developers, one front-end developer and one back-end developer use
 
 
 ### Built with
+   *Frontend Technologies*
 - [React](https://reactjs.org/) - JS library
 - [React Router](https://reactrouter.com/) - For user interfaces
 - [Bootstrap](https://getbootstrap.com/) - For UI interface elements
 - [MaterialUI](https://mui.com/) - Front-end framework for React Components
 - [Canvasjs](https://canvasjs.com/) - Charting library
 
+*Backend Technologies*
+- [Express](https://expressjs.com/) - For Backend Server
+- [MongoDB](https://www.mongodb.com/) - For Database
+
+## Services
+- [CoinMarketCap API](https://coinmarketcap.com/api/documentation/v1/)
+- [CoinGecko API v3](https://www.coingecko.com/api/documentations/v3)
+
+## Versioning
+- [Git](https://git-scm.com/) is used for version control.
 
 ## Authors
-- GitHub - [RamsonOdoi](https://github.com/Ramsonodoi)
-- GitHub - [GideonNtiBoateng](https://github.com/ntiBoateng)
+- GitHub - [Ramson Odoi](https://github.com/Ramsonodoi)
+- GitHub - [Gideon Nti Boateng](https://github.com/ntiBoateng)
 
+## Table of Contents
 
 
 
