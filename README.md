@@ -19,9 +19,10 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/ntiBoateng/cryptocurrency-market](https://github.com/ntiBoateng/cryptocurrency-market)
-- Live Site URL: [] ()
+- Live Site URL: [https://cryptocurrency-market.netlify.app/] (https://cryptocurrency-market.netlify.app)
 
 ### Screenshot
+![image](./public/CryptoMarket.png)
 
 
 ## Our process
