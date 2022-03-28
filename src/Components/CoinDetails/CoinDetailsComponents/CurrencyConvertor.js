@@ -29,13 +29,13 @@ const CurrencyConvertor = ({ detail, currentcurrency }) => {
                                 </div>
                             </div>
                             <div className="  to-container">
-                                <img src={(currentcurrency === "usd") ? "https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/INR.svg" : "https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/USD.svg"} alt="converter-coin-logo" className=" currency-image" />
+                                <img src={(currentcurrency === "usd") ? "https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/EUR.svg" : "https://s2.coinmarketcap.com/static/cloud/img/fiat-flags/USD.svg"} alt="converter-coin-logo" className=" currency-image" />
                                 <div className=" name-n-logo-container">
                                     <p fontSize="11px" color="text2" className="symbol-container">
                                         {currentcurrency.toUpperCase()}
                                     </p>
                                     <p fontSize="1" fontWeight="500" className="name-convertor converter-item-name" color="text">
-                                        {(currentcurrency === "usd") ? "Dollar" : "Indian Rupee"}
+                                        {(currentcurrency === "usd") ? "Dollar" : "Euro"}
                                     </p>
                                 </div>
                                 <div className="  convertor-input">
