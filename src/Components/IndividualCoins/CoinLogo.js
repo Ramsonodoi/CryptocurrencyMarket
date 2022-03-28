@@ -3,6 +3,7 @@ import "./CoinLogostyle.css";
 import { Link } from 'react-router-dom';
 import watchlistContext from '../../Context/watchlistContext';
 
+// CoinLogo Component
 
 const CoinLogo = ({ coin }) => {
 
