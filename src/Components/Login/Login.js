@@ -1,92 +1,164 @@
 import React, { useState } from "react";
 import "./Loginstyle.css";
-import { Link, useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom";
 
+//Login Component
 const Login = ({ changeloggedin, changeauthtoken }) => {
-  const [credentials, setCredentials] = useState({ email: "", password: "" })
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
   let history = useHistory();
-  const [wrongcredentials, setwrongcredentials] = useState("false")
+  const [wrongcredentials, setwrongcredentials] = useState("false");
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://cryptomarts.herokuapp.com/api/auth/login", {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ email: credentials.email, password: credentials.password })
-    });
-    const json = await response.json()
- 
     
+    // used to redirect if user log in
+    const response = await fetch(
+      "https://cryptomarts.herokuapp.com/api/auth/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: credentials.email,
+          password: credentials.password,
+        }),
+      }
+    );
+    const json = await response.json();
+
     if (json.error !== "Wrong Credentials") {
-      changeauthtoken(json.authtoken)
-      localStorage.setItem('token', json.authtoken);
+      changeauthtoken(json.authtoken);
+      localStorage.setItem("token", json.authtoken);
       history.push("/");
       changeloggedin("true");
-    
-
+    } else {
+      setwrongcredentials("true");
     }
-    else {
-      setwrongcredentials("true")
-      
-    }
-  }
+  };
   const onChange = (e) => {
-    setCredentials({ ...credentials, [e.target.name]: e.target.value })
-  }
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
   var stylingObject = {
     it: {
       width: "90.5%",
-      borderTopRightRadius: '0px',
-      borderBottomRightRadius: '0px'
-    }
-  }
+      borderTopRightRadius: "0px",
+      borderBottomRightRadius: "0px",
+    },
+  };
 
-  const [show, setshow] = useState('false')
+  const [show, setshow] = useState("false");
 
   const handleslasheye = (e) => {
-   e.preventDefault()
-    setshow('true')
-  }
+    e.preventDefault();
+    setshow("true");
+  };
   const handlenormaleye = (e) => {
-    e.preventDefault()
-    setshow('false')
-  }
+    e.preventDefault();
+    setshow("false");
+  };
 
   return (
     <>
       <div style={{ height: "90vh" }}>
         <div className="login">
-          <div className="LoginTitle"> <h3><b> Log In</b></h3></div>
-          <div className="New">New to MyCrypto?
-            <Link to="/SignUp" style={{ textDecoration: "none" }}> Create an account</Link></div>
+          <div className="LoginTitle">
+            {" "}
+            <h3>
+              <b> Log In</b>
+            </h3>
+          </div>
+          <div className="New">
+            New to MyCrypto?
+            <Link to="/SignUp" style={{ textDecoration: "none" }}>
+              {" "}
+              Create an account
+            </Link>
+          </div>
           <br />
-          <form >
+          <form>
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label"> <b> Email address</b></label>
-              <input type="email" className="form-control for-email" style={{ borderRadius: "10px" }} value={credentials.email} onChange={onChange} id="emailHelp" name="email" placeholder="Enter your email address..." aria-describedby="emailHelp" autoComplete="on" />
-
+              <label htmlFor="exampleInputEmail1" className="form-label">
+                {" "}
+                <b> Email address</b>
+              </label>
+              <input
+                type="email"
+                className="form-control for-email"
+                style={{ borderRadius: "10px" }}
+                value={credentials.email}
+                onChange={onChange}
+                id="emailHelp"
+                name="email"
+                placeholder="Enter your email address..."
+                aria-describedby="emailHelp"
+                autoComplete="on"
+              />
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputPassword1" className="form-label" id="id_password"> <b>Password</b></label>
-              <button type="submit" className="FP">Forgot password?</button>
+              <label
+                htmlFor="exampleInputPassword1"
+                className="form-label"
+                id="id_password"
+              >
+                {" "}
+                <b>Password</b>
+              </label>
+              <button type="submit" className="FP">
+                Forgot password?
+              </button>
 
+              <input
+                type={show === "true" ? "text" : "password"}
+                style={stylingObject.it}
+                className="form-control password-input"
+                value={credentials.password}
+                onChange={onChange}
+                name="password"
+                id="password"
+                autoComplete="on"
+                placeholder="Enter your password..."
+              />
 
-              
-              <input type={(show === 'true' )? "text" : "password"} style={stylingObject.it} className="form-control password-input" value={credentials.password} onChange={onChange} name="password" id="password" autoComplete="on" placeholder="Enter your password..." />
+              <i
+                className={
+                  show === "false" ? "far fa-eye d-none" : "far fa-eye"
+                }
+                id="show-eye"
+              >
+                <button
+                  onClick={handlenormaleye}
+                  style={{ border: "none", position: "relative", top: "-20px" }}
+                ></button>
+              </i>
+              <i
+                className={
+                  show === "false"
+                    ? "far fas fa-eye-slash"
+                    : "far fas fa-eye-slash d-none"
+                }
+                style={{ marginLeft: "0px", cursor: "pointer" }}
+                id="show-eye"
+              >
+                <button
+                  onClick={handleslasheye}
+                  style={{ border: "none", position: "relative", top: "-20px" }}
+                ></button>
+              </i>
 
-
-
-         
-              <i className={(show === 'false' )? "far fa-eye d-none" : "far fa-eye"} id="show-eye"><button onClick={handlenormaleye} style={{border : "none", position:"relative", top:"-20px"}}></button></i>
-              <i className={(show === 'false' )? "far fas fa-eye-slash" : "far fas fa-eye-slash d-none"} style={{ marginLeft: "0px", cursor: "pointer" }} id="show-eye"><button onClick={handleslasheye} style={{border : "none", position:"relative", top:"-20px"}}></button></i>
-
-
-
-
-
-              <p className={(wrongcredentials === "false" ? "d-none" : "text-danger")}>Wrong Credentials</p>
-              <button type="submit" className="btn btn-primary" onClick={handleSubmit}>Log In</button>
+              <p
+                className={
+                  wrongcredentials === "false" ? "d-none" : "text-danger"
+                }
+              >
+                Wrong Credentials
+              </p>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={handleSubmit}
+              >
+                Log In
+              </button>
             </div>
           </form>
         </div>
