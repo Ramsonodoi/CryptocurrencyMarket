@@ -31,10 +31,21 @@ Users should be able to:
 
 ## Our process
 
+A team of two developers, one front-end developer and one back-end developer used React and   
+
 
 ### Built with
+- [React](https://reactjs.org/) - JS library
+- [React Router](https://reactrouter.com/) - For user interfaces
+- [Bootstrap](https://getbootstrap.com/) - For UI interface elements
+- [MaterialUI](https://mui.com/) - Front-end framework for React Components
 
 
-## Author
+## Authors
+- GitHub - [RamsonOdoi](https://github.com/Ramsonodoi)
+- GitHub - [GideonNtiBoateng](https://github.com/ntiBoateng)
+
+
+
 
 
