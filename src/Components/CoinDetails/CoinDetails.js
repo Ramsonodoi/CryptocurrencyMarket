@@ -120,7 +120,7 @@ const CoinDetails = ({currentcurrency}) => {
         <div className="container">
 
           <div className="chart-options">
-            <h3 color="text" className="chart-header-text">{id.toUpperCase()} to INR Chart</h3>
+            {/* <h3 color="text" className="chart-header-text">{id.toUpperCase()} to INR Chart</h3> */}
           </div>
           <div className="chart-options">
 
