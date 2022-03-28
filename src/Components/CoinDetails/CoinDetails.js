@@ -110,7 +110,7 @@ const CoinDetails = ({currentcurrency}) => {
 
             <StateSection detail={detail}  currentcurrency={ currentcurrency}/>
             <div className="add-in-portfolio">
-              <CurrencyConvertor detail={detail} currentcurrency={ currentcurrency}/>
+              {/* <CurrencyConvertor detail={detail} currentcurrency={ currentcurrency}/> */}
             </div>
 
             <AddInPortfolio />
