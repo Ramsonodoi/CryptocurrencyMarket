@@ -48,6 +48,7 @@ A team of two developers, one front-end developer and one back-end developer use
 - [React Router](https://reactrouter.com/) - For user interfaces
 - [Bootstrap](https://getbootstrap.com/) - For UI interface elements
 - [MaterialUI](https://mui.com/) - Front-end framework for React Components
+- [Canvasjs](https://canvasjs.com/) - Charting library
 
 
 ## Authors
