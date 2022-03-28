@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/ntiBoateng/cryptocurrency-market](https://github.com/ntiBoateng/cryptocurrency-market)
+- Solution URL: [https://github.com/Ramsonodoi/CryptocurrencyMarket](https://github.com/Ramsonodoi/CryptocurrencyMarket)
 - Live Site URL: [] ()
 
 ### Screenshot
