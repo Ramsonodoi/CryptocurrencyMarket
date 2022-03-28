@@ -1,6 +1,9 @@
 import React from 'react';
 import "./Coinsstyle.css";
 
+
+// Coins Component ThaT Shows CurrentCurrency In Dollar And Euro 
+
 const Coins = ({ coin, currentcurrency }) => {
     
     
