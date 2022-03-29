@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-
+// UserDetails Component
 const UserDetails = () => {
+    
+    // Express Backend For Storing Data
     const host = "https://cryptomarts.herokuapp.com"
     const [userData, setuserData] = useState({})
 
