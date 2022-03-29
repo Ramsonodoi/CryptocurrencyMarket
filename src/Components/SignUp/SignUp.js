@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SignUpstyle.css";
 import { Link, useHistory } from "react-router-dom";
 
+//SignUp Component
 function SignUp({ changeloggedin, changeauthtoken }) {
   const [credentials, setCredentials] = useState({
     name: "",
@@ -14,6 +15,7 @@ function SignUp({ changeloggedin, changeauthtoken }) {
     e.preventDefault();
     const { name, email, password } = credentials;
     const response = await fetch(
+        //used to redirect if user sign in
       "https://cryptomarts.herokuapp.com/api/auth/createuser",
       {
         method: "POST",
