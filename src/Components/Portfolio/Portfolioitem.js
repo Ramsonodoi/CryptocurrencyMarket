@@ -16,6 +16,8 @@ const Portfolioitem = (props) => {
     useEffect(() => {
 
         const fetchData1 = async () => {
+            // URLS COINGECKO // limits: 50 calls/minute
+            // Used for fewer requests
             const response = await axios.get("https://api.coingecko.com/api/v3/coins/markets", {
                 params: {
                     vs_currency: currentcurrency,
