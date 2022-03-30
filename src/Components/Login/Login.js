@@ -68,7 +68,7 @@ const Login = ({ changeloggedin, changeauthtoken }) => {
             </h3>
           </div>
           <div className="New">
-            New to MyCrypto?
+            New to CryptoMart?
             <Link to="/SignUp" style={{ textDecoration: "none" }}>
               {" "}
               Create an account
