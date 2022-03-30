@@ -62,10 +62,7 @@ function App() {
 
                 <UserDetails />
                   </Route>
-                  <Route exact path="/Aboutme">
-
                 
-                </Route>
             </Switch>
             </div>
             </Router>
